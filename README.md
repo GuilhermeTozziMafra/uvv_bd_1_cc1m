@@ -1,2 +1,6 @@
-# uvv_bd_1_cc1m
-Projeto do PSET 1
+<h3 align="center">A passionate frontend developer from India</h3>
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
+
