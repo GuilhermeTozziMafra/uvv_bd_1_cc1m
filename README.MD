@@ -1,2 +1,3 @@
-# Guilherme Tozzi Mafra
-Material do **Curso de Git e GithuB**
+# PSET1
+## Aluno: **Guilherme Tozzi Mafra**  
+### Nome
