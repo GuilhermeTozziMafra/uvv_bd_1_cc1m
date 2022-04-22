@@ -1,0 +1,32 @@
+su - postgres
+Password: postgres
+
+-----CRIAÇÃO DO USUÁRIO----------
+[postgres@dbserver ~]$ createuser thierry -dPs
+Enter password for new role: 123
+Enter it again: 123
+Password: computacao@raiz
+
+[postgres@dbserver ~]$ psql
+Password for user postgres: computacao@raiz
+psql (14.2)
+Type "help" for help.
+
+-----CRIAÇÃO DO BANCO DE DADOS "UVV"--------
+postgres=# create database uvv
+postgres-# with
+postgres-# owner = "guilherme"
+postgres-# template = template0
+postgres-# encoding = 'UTF8' 
+postgres-# allow_connections = true;
+CREATE DATABASE
+postgres=# \c uvv guilherme;
+Password for user guilherme: 123 
+You are now connected to database "uvv" as user "guilherme".
+
+----CRIAÇÃO DO SCHEMA "ELMASRI"--------
+uvv=# create schema elmasri authorization guilherme;
+CREATE SCHEMA
+uvv=# alter user thierry set search_path to elmasri, "\$user', public;
+
+
