@@ -1,0 +1,20 @@
+# LOGIN DO USUÁRIO ROOT:
+mysql -u root -p
+computacao@raiz
+
+# CRIAÇÃO DO BANCO DE DADOS UVV:
+create database uvv
+character set UTF8mb4
+collate utf8mb4_bin;
+
+# CRIAÇÃO DO USUÁRIO guilherme:
+create user guilherme identified by '123';
+grant all privileges on uvv.* to guilherme;
+
+
+# TROCANDO DO USUÁRIO ROOT PARA O guilherme:
+system mysql -u guilherme -p
+123
+
+# ATIVANDO O BANCO DE DADOS uvv:
+use uvv;
