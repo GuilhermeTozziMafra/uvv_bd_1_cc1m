@@ -5,3 +5,5 @@ Dentro da máquina virtual, o ínicio do PSet foi contrruir o projeto lógico do
 
 >**OBS:** Ficou evidente a alteraração do campo `funcionario.endereco` de *varchar(30)* para *varchar(45)* a fim de que todos os dados fossem corretamente ocupados.
 
+>**OBS:** Além disso para conseguir inserir funcionario.cpf_supervisor do funcionário Jorge como NULL, foi necessário a retirarada a restrição NOT NULL do projeto lógico.
+
