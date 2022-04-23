@@ -7,6 +7,7 @@ Enter password for new role: 123
 Enter it again: 123
 Password: computacao@raiz
 
+-----ENTRANDO NO TERMINAL DO POSTGRESQL-----
 [postgres@dbserver ~]$ psql
 Password for user postgres: computacao@raiz
 psql (14.2)
