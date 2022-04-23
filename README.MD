@@ -6,5 +6,5 @@
 ##### Para acessar todas as atividades do projeto, acessa o subdiretório *pset1* para ver todas as informações sobre ele. 
 
 ### *Considerações finais:* 
-Neste PSet tive meu primeiro contato com a tecnologia Git e GitHub, além de compreender melhor a linguagem de marcação Markdown utilizada no GitHub. Além disso, gostei da exeperiência de aprender as linguagens do PostgreSQL e do MariaDB, os quais tornaram o projeto cada vez mais difícil. Em conclusão, acredito que fiz um ótimo trabalho apesar de ter errado algumas coisa acredito eu. Mas com o projeto final, creio que melhorei as minhas habilidades na parte do Desing e Desenvolvimento de Bando de Dados e também começei a entender melhor o sistema operacional do Linux.
+##### Neste PSet tive meu primeiro contato com a tecnologia Git e GitHub, além de compreender melhor a linguagem de marcação Markdown utilizada no GitHub. Além disso, gostei da exeperiência de aprender as linguagens do PostgreSQL e do MariaDB, os quais tornaram o projeto cada vez mais difícil. Em conclusão, acredito que fiz um ótimo trabalho apesar de ter errado algumas coisa acredito eu. Mas com o projeto final, creio que melhorei as minhas habilidades na parte do Desing e Desenvolvimento de Bando de Dados e também começei a entender melhor o sistema operacional do Linux.
 
