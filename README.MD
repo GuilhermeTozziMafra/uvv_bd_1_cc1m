@@ -1,4 +1,4 @@
-# Design e Desenvolvimento de Banco de Dados - PSET1
+# Design e Desenvolvimento de Banco de Dados
 ## Aluno: *Guilherme Tozzi Mafra*  
 ### Turma: *cc1m*
 #### Nome do Professor: *Abrantes Araujo Silva Filho* & Nome da Monitora: *Suelen Miranda Amorim*
