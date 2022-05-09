@@ -6,6 +6,11 @@ select numero_departamento, round (avg(salario),2) as média_salarial from funci
 
 select sexo, round (avg(salario),2) as média_salarial from funcionario  group by sexo;
 
+--- Questão 3 ---
+
+select concat(primeiro_nome, nome_meio, ultimo_nome) as nome_completo, data_nascimento, year(current_timestamp())-year(data_nascimento) as idade, salario, d.nome_departamento 
+from funcionario f inner join departamento d on f.numero_departamento = d.numero_departamento ;
+
 --- Questão 4 ---
 
 select concat(primeiro_nome, nome_meio, ultimo_nome) as nome_completo, year(current_timestamp())-year(data_nascimento) as idade, salario from funcionario where salario * 1.20 < 35000 or salario * 1.15 >= 35000;
