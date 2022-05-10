@@ -72,3 +72,10 @@ select f.numero_departamento, count(*) as qnt_empregados from funcionario f, dep
 where f.numero_departamento = d.numero_departamento
 group by f.numero_departamento;
 
+--- Questão 15 ---
+select distinct concat(f.primeiro_nome, f.nome_meio, f.ultimo_nome) as nome_completo, f.numero_departamento, p.nome_projeto
+from funcionario f
+inner join trabalha_em te on (f.cpf = te.cpf_funcionario)
+left outer join projeto p on (p.numero_projeto = te.numero_projeto and f.cpf = te.cpf_funcionario and te.horas > 0)
+order by nome_projeto;
+
