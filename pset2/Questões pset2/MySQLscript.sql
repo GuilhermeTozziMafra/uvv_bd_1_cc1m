@@ -13,7 +13,16 @@ from funcionario f inner join departamento d on f.numero_departamento = d.numero
 
 --- Questão 4 ---
 
-select concat(primeiro_nome, nome_meio, ultimo_nome) as nome_completo, year(current_timestamp())-year(data_nascimento) as idade, salario from funcionario where salario * 1.20 < 35000 or salario * 1.15 >= 35000;
+select concat(primeiro_nome, nome_meio, ultimo_nome) as nome_completo, year(current_timestamp())-year(data_nascimento) as idade, salario 
+from funcionario where salario * 1.20 < 35000 or salario * 1.15 >= 35000;
+
+--- Questão 5 ---
+
+select distinct f1.primeiro_nome as funcionarios, f2.primeiro_nome as gerentes, d.nome_departamento, f1.salario 
+from funcionario f1
+inner join funcionario f2 on (f1.cpf_supervisor = f2.cpf)
+inner join departamento d on (f1.numero_departamento = d.numero_departamento)
+order by nome_departamento, salario desc;
 
 --- Questão 6 ---
 
