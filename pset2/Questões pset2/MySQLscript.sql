@@ -66,6 +66,16 @@ from departamento d inner join projeto p on (d.numero_departamento = p.numero_de
 inner join trabalha_em t on (t.numero_projeto = p.numero_projeto) 
 inner join funcionario f on (d.numero_departamento = f.numero_departamento) where t.horas is null;
 
+--- Questão 13 ---
+
+select distinct concat(primeiro_nome, nome_meio, ultimo_nome) as nome, sexo, year(current_timestamp())-year(data_nascimento) as idade
+from funcionario
+union
+select distinct concat(d.nome_dependente, f.nome_meio, f.ultimo_nome) as nome, d.sexo, year(current_timestamp())-year(d.data_nascimento) as idade
+from dependente d
+inner join funcionario f on (f.cpf = d.cpf_funcionario)
+order by idade desc;
+
 --- Questão 14 ---
 
 select f.numero_departamento, count(*) as qnt_empregados from funcionario f, departamento d
