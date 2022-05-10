@@ -50,6 +50,13 @@ select numero_departamento, round (avg(salario),2) as média_salarial from funci
 select concat(f.primeiro_nome,' ', nome_meio,'.',ultimo_nome) as nome_funcionario, projeto.nome_projeto,(trabalha_em.horas * 50) as valor
 from ((funcionario as f inner join trabalha_em on f.cpf = trabalha_em.cpf_funcionario) inner join projeto on projeto.numero_projeto = trabalha_em.numero_projeto);
 
+--- Questão 12 ---
+
+select concat(primeiro_nome, nome_meio, ultimo_nome) as funcionario, d.nome_departamento, p.nome_projeto
+from departamento d inner join projeto p on (d.numero_departamento = p.numero_departamento) 
+inner join trabalha_em t on (t.numero_projeto = p.numero_projeto) 
+inner join funcionario f on (d.numero_departamento = f.numero_departamento) where t.horas is null;
+
 --- Questão 14 ---
 
 select f.numero_departamento, count(*) as qnt_empregados from funcionario f, departamento d
