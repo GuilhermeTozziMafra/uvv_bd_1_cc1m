@@ -6,3 +6,8 @@
 -> ***Aluno: Guilherme Tozzi Mafra***
 
 -> ***Monitoria: Suellen Miranda Amorim***
+
+## Prefácio:
+A ementa do trabalho do Pset 3 tem como principal função aporfundar os nossos conhecimentos acerca das ***Querries SQL Recursivas***.
+
+
