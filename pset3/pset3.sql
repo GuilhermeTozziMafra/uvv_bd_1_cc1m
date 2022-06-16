@@ -40,7 +40,7 @@
 -- Faz a conexão com o banco de dados (ALTERE O USUÁRIO/SENHA!):
 \echo
 \echo Conectando ao banco de dados:
-\c "dbname=uvv user=USUÁRIO password=SENHA"
+\c "dbname=uvv user=guilherme password=123"
 
 -- Ajusta o SEARCH_PATH da conexão atual, por via das dúvidas:
 SET SEARCH_PATH TO elmasri, "$user", public;
